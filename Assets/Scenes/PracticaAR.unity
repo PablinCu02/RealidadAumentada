@@ -1494,6 +1494,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1871651441}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1871651443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2927bce0e0bf9c843a0d6201ba7657cc,
+    type: 3}
+  m_PrefabInstance: {fileID: 1871651441}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1934516164 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -7793122890208383296, guid: 7c5a744dfe52d5e49afe4183097343af,
@@ -1554,7 +1560,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15d0c68019185b4ebce38e4d08123d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChangeAccesory
-  trofeo: {fileID: 0}
+  trofeo: {fileID: 1871651443}
   balon: {fileID: 718119289}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
