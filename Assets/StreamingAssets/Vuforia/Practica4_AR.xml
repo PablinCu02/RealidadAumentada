@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="escudo_realmadrid" size="1.000000 1.000000" />
+    <ImageTarget name="escudo_manu" size="1.000000 1.015000" />
+    <ImageTarget name="escudo_portugal" size="1.000000 1.000000" />
+    <ImageTarget name="escudo_sporting" size="1.000000 1.000000" />
+    <ImageTarget name="escudo_juventus" size="1.000000 1.000000" />
+    <ImageTarget name="escudo_alnassr" size="1.000000 1.000000" />
+  </Tracking>
+</QCARConfig>

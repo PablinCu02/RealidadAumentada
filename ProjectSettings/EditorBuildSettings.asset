@@ -8,5 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PracticaAR.unity
     guid: 38d46c1994d8bd84dbbc827323fccd80
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d7a4f94f9ddc7ea4db2971a765721aa8,
+      type: 2}
   m_UseUCBPForAssetBundles: 0
