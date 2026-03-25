@@ -375,8 +375,8 @@ GameObject:
   - component: {fileID: 114231793}
   - component: {fileID: 114231792}
   - component: {fileID: 114231791}
-  - component: {fileID: 114231795}
   - component: {fileID: 114231794}
+  - component: {fileID: 114231795}
   m_Layer: 0
   m_Name: CristianoRonaldo
   m_TagString: Untagged
@@ -484,13 +484,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Move
   model: {fileID: 2041847042}
-  ImageTargets:
-  - {fileID: 501977429}
-  - {fileID: 182135103}
-  - {fileID: 992988834}
-  - {fileID: 1380887550}
+  TargetPositions:
+  - {fileID: 501977430}
+  - {fileID: 182135104}
+  - {fileID: 992988835}
+  - {fileID: 1380887551}
   currentTarget: 0
   speed: 1
+  playerAnimator: {fileID: 0}
+  animationBoolParameter: IsWalking
 --- !u!114 &114231795
 MonoBehaviour:
   m_ObjectHideFlags: 0

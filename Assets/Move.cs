@@ -1,61 +1,66 @@
 using System.Collections;
 using UnityEngine;
-using Vuforia;
 
 public class Move : MonoBehaviour
 {
-    //Variables
-    public GameObject model; 
-    public ObserverBehaviour[] ImageTargets;
-    public int currentTarget= 0;
+    // Variables 
+    public GameObject model;
+    public Transform[] TargetPositions;
+    public int currentTarget = 0;
     public float speed = 1.0f;
     private bool isMoving = false;
-    public void MoveToNextTarget() //Función para iniciar el movimiento   
+
+    // Variables de Animación
+    public Animator playerAnimator;
+    public string animationBoolParameter = "IsWalking";
+
+    public void MoveToNextTarget()
     {
-        if (!isMoving)
+        // Solo se mueve si no está moviéndose ya, y si hay posiciones asignadas
+        if (!isMoving && TargetPositions.Length > 0)
         {
             StartCoroutine(MoveModel());
         }
     }
 
-    private IEnumerator MoveModel() //Corrutina para mover el modelo
+    private IEnumerator MoveModel()
     {
         isMoving = true;
-        ObserverBehaviour target = GetNextDetectedTarget();
-        if (target == null)
-        {
-            isMoving = false;
-            yield break;
-        }
-        Vector3 startPosition= model.transform.position;
-        Vector3 endPosition = target.transform.position;
 
-        float journey = 0;
+        // Obtenemos el target al que vamos a mover
+        Transform target = TargetPositions[currentTarget];
 
-        while (journey <= 1f)
+        if (target != null)
         {
-            journey += Time.deltaTime * speed;
-            model.transform.position = Vector3.Lerp(startPosition, endPosition, journey);
-            yield return null;
-        }
-        currentTarget= (currentTarget + 1) % ImageTargets.Length;
-        isMoving = false;
-    }
-
-    private ObserverBehaviour GetNextDetectedTarget() //Obtener el siguiente target detectado
-    {
-        foreach(ObserverBehaviour target in ImageTargets)
-        {
-            if (target != null && (target.TargetStatus.Status==Status.TRACKED) || (target.TargetStatus.Status==Status.EXTENDED_TRACKED))
+            // Encender animación
+            if (playerAnimator != null)
             {
-                return target;
+                playerAnimator.SetBool(animationBoolParameter, true);
             }
+
+            Vector3 startPosition = model.transform.position;
+            Vector3 endPosition = target.transform.position;
+
+            float journey = 0;
+
+            // Mover el modelo, control de velocidad
+            while (journey <= 1f)
+            {
+                journey += Time.deltaTime * speed;
+                model.transform.position = Vector3.Lerp(startPosition, endPosition, journey);
+                yield return null;
+            }
+
+            // Apagar animación al llegar
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetBool(animationBoolParameter, false);
+            }
+
+            // Preparar el siguiente destino
+            currentTarget = (currentTarget + 1) % TargetPositions.Length;
         }
-        return null;
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
+
+        isMoving = false;
     }
 }
