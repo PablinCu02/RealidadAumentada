@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
@@ -6,13 +6,14 @@ public class ChangeColor : MonoBehaviour
     public Renderer playera;
     public Renderer shortRopa;
     public Renderer botines;
+    public Renderer calcetas;
 
     private int estadoColor = 0;
 
     public void CambiarSiguienteColor()
     {
         estadoColor++;
-        if (estadoColor > 3) estadoColor = 0;
+        if (estadoColor > 4) estadoColor = 0;
 
         Color colorAplicar = Color.white;
         switch (estadoColor)
@@ -21,11 +22,13 @@ public class ChangeColor : MonoBehaviour
             case 1: colorAplicar = Color.blue; break;
             case 2: colorAplicar = new Color(0.8f, 0.8f, 0.8f); break;
             case 3: colorAplicar = Color.red; break;
+            case 4: colorAplicar = Color.green; break;
         }
 
         AplicarColor(playera, colorAplicar);
         AplicarColor(shortRopa, colorAplicar);
         AplicarColor(botines, colorAplicar);
+        AplicarColor(calcetas, colorAplicar);
 
     }
 
