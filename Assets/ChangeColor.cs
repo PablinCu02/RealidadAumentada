@@ -1,43 +1,54 @@
- using UnityEngine;
+using UnityEngine;
 
 public class ChangeColor : MonoBehaviour
 {
-    [Header("Partes del Modelo")]
-    public Renderer playera;
-    public Renderer shortRopa;
-    public Renderer botines;
-    public Renderer calcetas;
+    [Header("Partes del Modelo (Renderers)")]
+    public SkinnedMeshRenderer playera;
+    public SkinnedMeshRenderer shortRopa;
+    public SkinnedMeshRenderer calcetas;
 
-    private int estadoColor = 0;
+    [Header("Materiales por Equipo (Orden: Sporting, Portugal, ManU, RM, Juve)")]
+    public Material[] matPlayeras;
+    public Material[] matShorts;
+    public Material[] matCalcetas;
 
-    public void CambiarSiguienteColor()
+    private int indiceActual = 0;
+
+    void Start()
     {
-        estadoColor++;
-        if (estadoColor > 4) estadoColor = 0;
-
-        Color colorAplicar = Color.white;
-        switch (estadoColor)
-        {
-            case 0: colorAplicar = Color.white; break;
-            case 1: colorAplicar = Color.blue; break;
-            case 2: colorAplicar = new Color(0.8f, 0.8f, 0.8f); break;
-            case 3: colorAplicar = Color.red; break;
-            case 4: colorAplicar = Color.green; break;
-        }
-
-        AplicarColor(playera, colorAplicar);
-        AplicarColor(shortRopa, colorAplicar);
-        AplicarColor(botines, colorAplicar);
-        AplicarColor(calcetas, colorAplicar);
-
+        // Inicia con el uniforme del Sporting
+        AplicarTodos(0);
     }
 
-    private void AplicarColor(Renderer parte, Color colorNuevo)
+    public void CambiarUniformeManual()
     {
-        foreach (Material mat in parte.materials)
+        if (matPlayeras.Length == 0) return;
+
+        // Ciclamos el índice
+        indiceActual = (indiceActual + 1) % matPlayeras.Length;
+        AplicarTodos(indiceActual);
+    }
+
+    private void AplicarTodos(int indice)
+    {
+        if (matPlayeras.Length > indice) ReemplazarMateriales(playera, matPlayeras[indice]);
+        if (matShorts.Length > indice) ReemplazarMateriales(shortRopa, matShorts[indice]);
+        if (matCalcetas.Length > indice) ReemplazarMateriales(calcetas, matCalcetas[indice]);
+    }
+
+    // Funcion para reemplazar el material de una parte del modelo 
+    private void ReemplazarMateriales(SkinnedMeshRenderer parte, Material nuevoMat)
+    {
+        if (parte == null || nuevoMat == null) return;
+        Material[] nuevosMats = new Material[parte.materials.Length];
+
+        // Aplicamos nuevo material 
+        for (int i = 0; i < nuevosMats.Length; i++)
         {
-            mat.color = colorNuevo;
-            mat.SetColor("_BaseColor", colorNuevo);
+            nuevosMats[i] = nuevoMat;
         }
+
+        // Le regresamos el arreglo completo al modelo
+        parte.materials = nuevosMats;
     }
 }

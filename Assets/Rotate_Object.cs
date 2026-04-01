@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
-    // Hacemos la variable pública para verla en el Inspector
+    // Variable pública para modificarla en Unity
     public float rotationSpeed = 90f;
 
     void Update()

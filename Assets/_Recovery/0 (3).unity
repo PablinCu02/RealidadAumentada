@@ -489,7 +489,6 @@ GameObject:
   - component: {fileID: 114231792}
   - component: {fileID: 114231791}
   - component: {fileID: 114231794}
-  - component: {fileID: 114231795}
   m_Layer: 0
   m_Name: CristianoRonaldo
   m_TagString: Untagged
@@ -567,7 +566,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 114231795}
+  mPreview: {fileID: 0}
 --- !u!4 &114231793
 Transform:
   m_ObjectHideFlags: 0
@@ -606,7 +605,7 @@ MonoBehaviour:
   - {fileID: 1314136714}
   - {fileID: 77319207}
   ManagerTransform: {fileID: 1461726885}
-  speed: 0.3
+  speed: 1
   playerAnimator: {fileID: 832547048}
   sportingBall: {fileID: 1874878266}
   portugalBadge: {fileID: 2144789687}
@@ -615,25 +614,6 @@ MonoBehaviour:
   masterTrophy: {fileID: 1601969634}
   mensajeUI: {fileID: 722380460}
   currentTarget: 0
---- !u!114 &114231795
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114231789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 114231792}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: escudo_sporting
-  mDatasetName: Vuforia/Practica4_AR.xml
-  mCastedBehaviour: {fileID: 114231792}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &118929923
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -709,10 +689,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1874878267}
-    - targetCorrespondingSourceObject: {fileID: 7728894730767073139, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
+    - targetCorrespondingSourceObject: {fileID: -5051812759270295774, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 352811984}
+      addedObject: {fileID: 810438751}
     - targetCorrespondingSourceObject: {fileID: 1197522194946022198, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
         type: 3}
       insertIndex: -1
@@ -793,7 +773,6 @@ GameObject:
   - component: {fileID: 182135104}
   - component: {fileID: 182135103}
   - component: {fileID: 182135102}
-  - component: {fileID: 182135105}
   m_Layer: 0
   m_Name: RealMadrid
   m_TagString: Untagged
@@ -871,7 +850,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 182135105}
+  mPreview: {fileID: 0}
 --- !u!4 &182135104
 Transform:
   m_ObjectHideFlags: 0
@@ -889,25 +868,6 @@ Transform:
   - {fileID: 1314136714}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &182135105
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 182135100}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 182135103}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: escudo_realmadrid
-  mDatasetName: Vuforia/Practica4_AR.xml
-  mCastedBehaviour: {fileID: 182135103}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &257829193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1146,100 +1106,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 335418936}
   m_CullTransparentMesh: 1
---- !u!1001 &352811983
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1195051410}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.0074662
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.0074662
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.0074662
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.0012862834
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.0019344843
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.0009139858
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.49934876
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.45619297
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.54120326
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.49963763
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 38a601a79197fff45b0ddef1613fa3d0,
-        type: 3}
-      propertyPath: m_Name
-      value: BalonFutbolPaises
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 38a601a79197fff45b0ddef1613fa3d0, type: 3}
---- !u!4 &352811984 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
-    type: 3}
-  m_PrefabInstance: {fileID: 352811983}
-  m_PrefabAsset: {fileID: 0}
---- !u!23 &352811985 stripped
+--- !u!23 &358796316 stripped
 MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 38a601a79197fff45b0ddef1613fa3d0,
+  m_CorrespondingSourceObject: {fileID: 6821460417509075001, guid: 7c5a744dfe52d5e49afe4183097343af,
     type: 3}
-  m_PrefabInstance: {fileID: 352811983}
+  m_PrefabInstance: {fileID: 585194053}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &418452382
 GameObject:
@@ -1331,6 +1202,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &493837368 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -5051812759270295774, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 118929923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &501977426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1342,7 +1219,6 @@ GameObject:
   - component: {fileID: 501977430}
   - component: {fileID: 501977429}
   - component: {fileID: 501977428}
-  - component: {fileID: 501977431}
   m_Layer: 0
   m_Name: Portugal
   m_TagString: Untagged
@@ -1420,7 +1296,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 501977431}
+  mPreview: {fileID: 0}
 --- !u!4 &501977430
 Transform:
   m_ObjectHideFlags: 0
@@ -1438,25 +1314,6 @@ Transform:
   - {fileID: 1540401174}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &501977431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501977426}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 501977429}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: escudo_portugal
-  mDatasetName: Vuforia/Practica4_AR.xml
-  mCastedBehaviour: {fileID: 501977429}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &525193363
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +1864,101 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 943292189}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &810438750
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 493837368}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.009999997
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.0100000035
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.0010524368
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000656221
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00009027228
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.014115926
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.70867753
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.08295185
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7004969
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 38a601a79197fff45b0ddef1613fa3d0,
+        type: 3}
+      propertyPath: m_Name
+      value: BalonFutbolPaises
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 38a601a79197fff45b0ddef1613fa3d0, type: 3}
+--- !u!4 &810438751 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 38a601a79197fff45b0ddef1613fa3d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 810438750}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &810438752 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 38a601a79197fff45b0ddef1613fa3d0,
+    type: 3}
+  m_PrefabInstance: {fileID: 810438750}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &822654023
 GameObject:
   m_ObjectHideFlags: 0
@@ -2092,7 +2044,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 832547050}
         m_TargetAssemblyTypeName: ChangeColor, Assembly-CSharp
-        m_MethodName: CambiarUniformeManual
+        m_MethodName: CambiarSiguienteColor
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2164,7 +2116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a15d0c68019185b4ebce38e4d08123d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CambiarAccesorio
-  balonRenderer: {fileID: 352811985}
+  balonRenderer: {fileID: 810438752}
   materialesBalon:
   - {fileID: 2100000, guid: a7b4d0ba8d1c2fb4799088a2251a502a, type: 2}
   - {fileID: 2100000, guid: f070c9ef2b6e0664bb95cc41ca6f705a, type: 2}
@@ -2191,25 +2143,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeColor
   playera: {fileID: 1927417939}
   shortRopa: {fileID: 1858699376}
+  botines: {fileID: 2074723496}
   calcetas: {fileID: 1793015282}
-  matPlayeras:
-  - {fileID: 2100000, guid: 3097cbae450202e47a5b627de6c658f2, type: 2}
-  - {fileID: 2100000, guid: 4e17d9be4f7084c4a9b06896f6a94af3, type: 2}
-  - {fileID: 2100000, guid: 80e6847d83d2ac540a78876ead71681c, type: 2}
-  - {fileID: 2100000, guid: 66b6327df788b814a877beb35e0b73c9, type: 2}
-  - {fileID: 2100000, guid: 991b7c846bb687d419365cd6598eabd7, type: 2}
-  matShorts:
-  - {fileID: 2100000, guid: 05496f497eec7174f82092f82d328366, type: 2}
-  - {fileID: 2100000, guid: 6fc9585b7e71efe4496472f8b0a8a122, type: 2}
-  - {fileID: 2100000, guid: 565cfbd8bd9bc6848b1f9def6338d567, type: 2}
-  - {fileID: 2100000, guid: 2c435e519d1a0564ea52c17b78dfe419, type: 2}
-  - {fileID: 2100000, guid: 19d9060608c23c8449bb854319cbf8b8, type: 2}
-  matCalcetas:
-  - {fileID: 2100000, guid: 45d24ff3c2264b74890e5f194cd3ee22, type: 2}
-  - {fileID: 2100000, guid: cb0c38331b66a5549a7513b4284e5da0, type: 2}
-  - {fileID: 2100000, guid: 0d8821324ae8f8f4baab4db0fb60961e, type: 2}
-  - {fileID: 2100000, guid: ca72361fc96fabc41854cba9064f9b37, type: 2}
-  - {fileID: 2100000, guid: 99eef0bacc1c63a48a9c5653445f4981, type: 2}
 --- !u!1001 &943292189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2296,7 +2231,6 @@ GameObject:
   - component: {fileID: 992988835}
   - component: {fileID: 992988834}
   - component: {fileID: 992988833}
-  - component: {fileID: 992988836}
   m_Layer: 0
   m_Name: Juventus
   m_TagString: Untagged
@@ -2374,7 +2308,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 992988836}
+  mPreview: {fileID: 0}
 --- !u!4 &992988835
 Transform:
   m_ObjectHideFlags: 0
@@ -2392,25 +2326,6 @@ Transform:
   - {fileID: 77319207}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &992988836
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 992988831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 992988834}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: escudo_juventus
-  mDatasetName: Vuforia/Practica4_AR.xml
-  mCastedBehaviour: {fileID: 992988834}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1 &1116185857
 GameObject:
   m_ObjectHideFlags: 0
@@ -2548,12 +2463,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1116185857}
   m_CullTransparentMesh: 1
---- !u!4 &1195051410 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 7728894730767073139, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
-    type: 3}
-  m_PrefabInstance: {fileID: 118929923}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1204026968
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,7 +2779,6 @@ GameObject:
   - component: {fileID: 1380887551}
   - component: {fileID: 1380887550}
   - component: {fileID: 1380887549}
-  - component: {fileID: 1380887552}
   m_Layer: 0
   m_Name: ManUnited
   m_TagString: Untagged
@@ -2948,7 +2856,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1380887552}
+  mPreview: {fileID: 0}
 --- !u!4 &1380887551
 Transform:
   m_ObjectHideFlags: 0
@@ -2966,25 +2874,6 @@ Transform:
   - {fileID: 525193364}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1380887552
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1380887547}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1380887550}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: escudo_manu
-  mDatasetName: Vuforia/Practica4_AR.xml
-  mCastedBehaviour: {fileID: 1380887550}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!1001 &1461726884
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3663,10 +3552,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeColor
   playera: {fileID: 0}
   shortRopa: {fileID: 0}
+  botines: {fileID: 0}
   calcetas: {fileID: 0}
-  matPlayeras: []
-  matShorts: []
-  matCalcetas: []
 --- !u!23 &1934516168 stripped
 MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 8797572606681602891, guid: 7c5a744dfe52d5e49afe4183097343af,
@@ -3793,10 +3680,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeColor
   playera: {fileID: 1934516168}
   shortRopa: {fileID: 1857930232}
+  botines: {fileID: 358796316}
   calcetas: {fileID: 0}
-  matPlayeras: []
-  matShorts: []
-  matCalcetas: []
 --- !u!114 &2041847044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3811,6 +3696,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ChangeAccesory
   balonRenderer: {fileID: 0}
   materialesBalon: []
+--- !u!137 &2074723496 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -4472347930978559541, guid: e0e53c569c99e7945bd2cd3d6fb88f2d,
+    type: 3}
+  m_PrefabInstance: {fileID: 118929923}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2144789685
 PrefabInstance:
   m_ObjectHideFlags: 0
